@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="media/s0.png" type="image/ico"/>
+	<title>微笑的魚</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	body {
+		background-color: rgba(250,230,207,0.7);
+		font-family: 'Comic Sans MS','微軟正黑體';
+		min-width: 1000px;
+		max-width: 2000px;
+		background-image: url('media/03t.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: left bottom;
+		background-size: 20%;
+	}
+	/* 導覽列 */
+	.page1 img {
+		margin: 0 10px;
+		width: 7%;
+		webkit-filter: grayscale(5%);
+		filter: grayscale(30%)
+    }
+	.page1 a {
+		text-decoration: none;
+	}
+	.page1 img:hover {
+		webkit-filter: grayscale(0%);
+		filter: grayscale(0%)
+	}
+	.page1 img.active {
+		webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		border: 7px dashed #F5CBA5;
+		border-top: 7px solid #F5CBA5;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 2px 2px 2px #6A3906;
+	}
+	p {
+		color: #6A3906;
+		font-size: 14pt;
+	}
+	.person {
+		border: 7px ridge #F5CBA5;
+		margin-bottom: 25px;
+		width: 100%;
+		background-color: rgba(250,230,207,0.7);
+	}
+	.person:hover {
+		border: 5px dashed #6A3906;
+	}
+	</style>
+</head>
+<body>
+<!-- 抬頭 -->
+<div class="page1 text-center" style="background-color: #F5CBA5;">
+		<img src="media/00logo.png" style="width: 5%;">
+		<img src="media/01title.jpg" style="width: 12%;">
+	</a>
+</div>
+<!-- 導覽列 -->
+<div class=" page1 text-center">
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/2.html">
+		<img src="media/s00.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/3.html">
+		<img src="media/s01.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/4.html"> 
+		<img src="media/s02.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/5.html">
+		<img class='active'src="media/s03.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/7.html">
+		<img src="media/s04.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/6.html">
+		<img src="media/s05.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/8.html">
+		<img src="media/s06.png" />
+	</a>
+</div>
+<br />
+<!-- 內文 -->
+<div class="container-fluid text-center">    
+	<div class="row content">
+		<div class="col-md-2 sidenav">
+		</div>
+		<div class="col-md-8 text-left" style="border: 9px double #6A3906; border-radius: 40px; padding: 30px; text-align: justify;"> 
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">甜口味</a></li>
+				<li><a data-toggle="tab" href="#menu1">鹹口味</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+					<div class="row">
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>新貴派</strong></p>
+							<a href="#demo1" data-toggle="collapse">
+								<img src="media/ca01.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo1" class="collapse">
+								<p>新貴派口味是店家招牌<br>
+								   加了巧克力醬和花生醬<br>
+								   味道很濃郁</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>香蕉巧克力</strong></p>
+							<a href="#demo2" data-toggle="collapse">
+								<img src="media/ca02.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo2" class="collapse">
+								<p>嚴選食材<br>
+								巧克力抹醬搭配新鮮香蕉<br>
+								濃郁細緻、香醇滑嫩口感<br>
+							        讓人欲罷不能</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>Oreo</strong></p>
+							<a href="#demo3" data-toggle="collapse">
+								<img src="media/ca03.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo3" class="collapse">
+								<p>鮮奶油搭配oreo餅乾<br>
+								淡淡的香氣輕盈細緻的口感<br>
+								舌尖一點彷彿蛋糕就在嘴中化開</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="menu1" class="tab-pane fade">
+					<div class="row">
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>培根歐姆蛋</strong></p>
+							<a href="#demo4" data-toggle="collapse">
+								<img src="media/cb01.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo4" class="collapse">
+								<p>外酥內軟的鬆餅<br>
+								裡面夾雜香濃起司的歐姆蛋<br>
+								軟嫩順口還有香煎培根<br>
+								鹹鹹的風味讓人欲罷不能</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>糖醋咕咕雞</strong></p>
+							<a href="#demo5" data-toggle="collapse">
+								<img src="media/cb02.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo5" class="collapse">
+								<p>糖醋咕咕雞味道酸甜<br>
+								   雞肉軟嫩夾帶著生菜<br>
+								   口感不膩</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>日式醬燒豬柳</strong></p>
+							<a href="#demo6" data-toggle="collapse">
+								<img src="media/cb03.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo6" class="collapse">
+								<p>醬燒豬柳裡面還有加上生菜<br>
+								   和店家的特調醬汁</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>泰式檸檬雞</strong></p>
+							<a href="#demo7" data-toggle="collapse">
+								<img src="media/cb04.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo7" class="collapse">
+								<p>酸酸甜甜的泰式口味<br>
+								   配上新鮮生菜<br>
+								   讓人食慾大開<br>
+							           忍不住一口接著一口</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>辣味韓式腿排</strong></p>
+							<a href="#demo8" data-toggle="collapse">
+								<img src="media/cb05.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo8" class="collapse">
+								<p>微辣的腿排肉質偏嫩<br>
+						    	 	   配上清脆爽口的新鮮生菜<br>
+								   讓人一吃就上癮</p>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<br>
+							<p class="text-center"><strong>塔塔腿排</strong></p>
+							<a href="#demo9" data-toggle="collapse">
+								<img src="media/cb06.jpg" class="img-thumbnail person">
+							</a>
+							<div id="demo9" class="collapse">
+								<p>雞腿排軟嫩口口吃的到<br>
+								   塔塔醬酸酸甜甜</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div class="col-md-2 sidenav" style="color: #6A3906;">
+			<div class="panel panel-warning">
+				<div class="well panel-heading">消息</div>
+				<p>
+				鬆餅可以任選<br>
+                                2種口味各半<br>
+                                自由搭配❗️❗️❗️<br>
+                                鬆餅+飲料現折5元
+				
+			</div>
+			<br/>
+			<div class="panel panel-warning" >
+				<div class="well panel-heading"><img src="media/02fb.png" style="width: 10%;"> 粉絲專頁</span></div> 
+				<a href="https://www.facebook.com/sf.muffin/"><img src=" media/00logo.png" style="height:100px"> </a>
+			</div>
+		</div>
+    </div>
+</div>
+<br />
+<footer class="container-fluid"
+	style="color: #6A3906; background-color: #F5CBA5; font-size: 12pt;
+	padding-top: 10px; margin-bottom: 0px;">
+	<address class="container text-center">| 版權所屬 微笑的魚 所有 © 2018 |</address>
+</footer>

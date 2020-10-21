@@ -1,0 +1,189 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>微笑的魚</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	body {
+		background-color: rgba(250,230,207,0.7);
+		font-family: 'Comic Sans MS','微軟正黑體';
+		min-width: 1000px;
+		max-width: 2000px;
+		background-image: url('media/03t.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: left bottom;
+		background-size: 20%;
+	}
+	/* 導覽列 */
+	.page1 img {
+		margin: 0 10px;
+		width: 7%;
+		webkit-filter: grayscale(5%);
+		filter: grayscale(30%);
+    }
+	.page2 img {
+		margin: 0 10px;
+		width: 60%;
+    }
+	.page1 img:hover {
+		webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+	}
+	.page1 a {
+		text-decoration: none;
+	}
+	.page1 img.active {
+		webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		border: 7px dashed #F5CBA5;
+		border-top: 7px solid #F5CBA5;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 2px 2px 2px #6A3906;
+	}
+	p {
+		color: #6A3906;
+		font-size: 14pt;
+	}
+	</style>
+</head>
+<body>
+<!-- 抬頭 -->
+<div class="page1 text-center" style="background-color: #F5CBA5;">
+		<img src="media/00logo.png" style="width: 5%;">
+		<img src="media/01title.jpg" style="width: 12%;">
+	</a>
+</div>
+<!-- 導覽列 -->
+<div class=" page1 text-center">
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/2.html">
+		<img src="media/s00.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/3.html">
+		<img class='active'src="media/s01.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/4.html"> 
+		<img src="media/s02.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/5.html">
+		<img src="media/s03.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/7.html">
+		<img src="media/s04.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/6.html">
+		<img src="media/s05.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/8.html">
+		<img src="media/s06.png" />
+	</a>
+</div>
+<br />
+<!-- 內文 -->
+<div class="container-fluid text-center">    
+	<div class="row content">
+		<div class="col-md-2 sidenav">
+		</div>
+		<div class="col-md-8 text-left" style="border: 9px double #6A3906; border-radius: 40px; padding: 30px; text-align: justify;"> 
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">介紹</a></li>
+				<li><a data-toggle="tab" href="#menu1">店長</a></li>
+                                <li><a data-toggle="tab" href="#menu2">影片</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<!-- 幻燈 -->
+						<div class="col-md-8">
+							<div id="myCarousel" class="carousel slide  text-center" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel" data-slide-to="1"></li>
+									<li data-target="#myCarousel" data-slide-to="2"></li>
+									<li data-target="#myCarousel" data-slide-to="3"></li>
+									<li data-target="#myCarousel" data-slide-to="4"></li>
+									<li data-target="#myCarousel" data-slide-to="5"></li>
+									<li data-target="#myCarousel" data-slide-to="6"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item active">
+										<img src="media/a07.jpg">
+									</div>
+									<div class="item">
+										<img src="media/a05.jpg">
+									</div>
+									<div class="item">
+										<img src="media/a06.jpg">
+									</div>
+									<div class="item">
+										<img src="media/a12.jpg">
+									</div>
+									<div class="item">
+										<img src="media/a13.jpg">
+									</div>
+									<div class="item">
+										<img src="media/a09.jpg">
+									</div>
+									<div class="item">
+										<img src="media/a10.jpg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 幻燈結束 -->
+						<div class="col-md-2"></div>
+					</div>
+					<h3><strong>微笑的魚</strong></h3>
+					<p>位在中壢元智大學附近，「微笑的魚鬆餅店」共有19種甜、10種鹹口味，除了傳統的<u>玉米蔬菜</u>、<u>抹茶</u>，還有<u>新貴派</u>、<u>OREO</u>、<u>棉花糖</u>等，季節限定的<u>草莓煉乳</u>、<u>草莓巧克力</u>也是秒殺款，不只好吃也相當好拍。<br>
+
+特別的是，店家為體貼有選擇障礙的顧客，能任選2款隨意混搭，以價錢高者計。黃老闆表示，多半顧客會喜歡嚐鮮，選甜、鹹兩種混搭相當熱門，甜的部分以<u>巧克力香蕉</u>跟<u>花生芝麻</u>最暢銷，鹹的部分則是<u>日式醬燒豬柳</u>、<u>塔塔腿排</u>最夯。<br>
+				</div>
+				<div id="menu1" class="tab-pane fade">
+					<div class="page2 text-center">
+						<img src="media/a02.jpg">
+					</div>
+					<h3><strong>店長 Monkey</strong></h3>
+畢業於元智大學的老闆說「微笑的魚」2009年還只是路邊小攤車，經過一年在日本學習服務精神，2011年選在母校附近開店。新竹店在清華大學附近，未來還會持續研發創新口味。
+				</div>
+                                <div id="menu2" class="tab-pane fade">
+					<div class="page2 text-center">
+                                        <h3><strong>非凡大探索採訪</strong></h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/gWwNX3zxAnQ?start=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+                                        <h3><strong>食尚玩家</strong></h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/CTzBeUEG0yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					
+				</div>
+			</div>	
+		</div>
+<div class="col-md-2 sidenav" style="color: #6A3906;">
+			<div class="panel panel-warning">
+				<div class="well panel-heading">消息</div>
+				<p>
+				鬆餅可以任選<br>
+                                2種口味各半<br>
+                                自由搭配❗️❗️❗️<br>
+                                鬆餅+飲料現折5元
+				
+			</div>
+			<br/>
+			<div class="panel panel-warning" >
+				<div class="well panel-heading"><img src="media/02fb.png" style="width: 10%;"> 粉絲專頁</span></div> 
+				<a href="https://www.facebook.com/sf.muffin/"><img src=" media/00logo.png" style="height:100px"> </a>
+			</div>
+		</div>
+    </div>
+</div>
+<br />
+<footer class="container-fluid"
+	style="color: #6A3906; background-color: #F5CBA5; font-size: 12pt;
+	padding-top: 10px; margin-bottom: 0px;">
+	<address class="container text-center">| 版權所屬 微笑的魚 所有 © 2018 |</address>
+</footer>
+</html>

@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="media/s0.png" type="image/ico"/>
+	<title>微笑的魚</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	body {
+		background-color: rgba(250,230,207,0.7);
+		font-family: 'Comic Sans MS','微軟正黑體';
+		min-width: 1000px;
+		max-width: 2000px;
+		background-image: url('media/03t.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: left bottom;
+		background-size: 20%;
+	}
+	/* 導覽列 */
+	.page1 img {
+		margin: 0 10px;
+		width: 7%;
+		webkit-filter: grayscale(5%);
+		filter: grayscale(30%)
+    }
+	.page1 a {
+		text-decoration: none;
+	}
+	.page1 img:hover {
+		webkit-filter: grayscale(0%);
+		filter: grayscale(0%)
+	}
+	.page1 img.active {
+		webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		border: 7px dashed #F5CBA5;
+		border-top: 7px solid #F5CBA5;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 2px 2px 2px #6A3906;
+	}
+	p {
+		color: #6A3906;
+		font-size: 14pt;
+	}
+	.person {
+		border: 7px ridge #F5CBA5;
+		margin-bottom: 25px;
+		width: 100%;
+		background-color: rgba(250,230,207,0.7);
+	}
+	.person:hover {
+		border: 5px dashed #6A3906;
+	}
+	</style>
+</head>
+<body>
+<!-- 抬頭 -->
+<div class="page1 text-center" style="background-color: #F5CBA5;">
+		<img src="media/00logo.png" style="width: 5%;">
+		<img src="media/01title.jpg" style="width: 12%;">
+	</a>
+</div>
+<!-- 導覽列 -->
+<div class=" page1 text-center">
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/2.html">
+		<img src="media/s00.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/3.html">
+		<img src="media/s01.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/4.html"> 
+		<img src="media/s02.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/5.html">
+		<img src="media/s03.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/7.html">
+		<img src="media/s04.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/6.html">
+		<img src="media/s05.png" />
+	</a>
+	<a href="http://140.138.144.66/1071webAproj/1071616_new3/8.html">
+		<img class='active'src="media/s06.png" />
+	</a>
+</div>
+<br />
+<!-- 內文 -->
+<div class="container-fluid text-center">    
+	<div class="row content">
+		<div class="col-md-2 sidenav">
+		</div>
+		<div class="col-md-8 text-left" style="border: 9px double #6A3906; border-radius: 40px; padding: 30px; text-align: justify;"> 
+			        <link rel="stylesheet"
+          href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <style>
+           .ui-menu {width:200px}
+        </style>
+    </head>
+    <body>
+    <form name="login">
+<b>基本資料</b><p>
+姓名：<input name="name" type="text" size="8"><br>
+性別：<input name="sex" type="radio" value="male">男
+      <input name="sex" type="radio" value="denale">女<p>
+
+<b>年齡</b><p>
+         <select name="choice">
+            <option value="1">12以下
+            <option value="2">12-15
+            <option value="3">16-20
+            <option value="4">21-25
+            <option value="5">26-30
+            <option value="6">31-35
+            <option value="7">36-40
+            <option value="8">40以上
+         </select><br>
+<p>
+　1.　服務態度<p>
+   　　　<input name="satisfaction" type="radio" value="vary agree">非常滿意
+         <input name="satisfaction" type="radio" value="agree">滿意
+         <input name="satisfaction" type="radio" value="none">尚可滿意
+         <input name="satisfaction" type="radio" value="disagree">不滿意
+         <input name="satisfaction" type="radio" value="vary disagree">非常不滿意<p>
+　2.　食物美味<p>
+   　　　<input name="satisfaction2" type="radio" value="vary agree">非常滿意
+         <input name="satisfaction2" type="radio" value="agree">滿意
+         <input name="satisfaction2" type="radio" value="none">尚可滿意
+         <input name="satisfaction2" type="radio" value="disagree">不滿意
+         <input name="satisfaction2" type="radio" value="vary disagree">非常不滿意<p>
+　3.　店內環境氣氛<p>
+   　　　<input name="satisfaction3" type="radio" value="vary agree">非常滿意
+         <input name="satisfaction3" type="radio" value="agree">滿意
+         <input name="satisfaction3" type="radio" value="none">尚可滿意
+         <input name="satisfaction3" type="radio" value="disagree">不滿意
+         <input name="satisfaction3" type="radio" value="vary disagree">非常不滿意<p>
+
+<b>對本店的評分(1~5分)</b><br>
+　　　<input name="score" type="range" min="1" max="5" style="width: 50%;" >
+
+<b>其他意見</b><p>
+         <textarea name="comment" rows="5" cols=60"></textarea><p>
+        
+         <input type="reset" value="清除重填">
+         <input type="submit" value="送出">
+
+
+      </form>
+</div>
+<div class="col-md-2 sidenav" style="color: #6A3906;">
+			<div class="panel panel-warning">
+				<div class="well panel-heading">消息</div>
+				<p>
+				鬆餅可以任選<br>
+                                2種口味各半<br>
+                                自由搭配❗️❗️❗️<br>
+                                鬆餅+飲料現折5元
+				
+			</div>
+			<br/>
+			<div class="panel panel-warning" >
+				<div class="well panel-heading"><img src="media/02fb.png" style="width: 10%;"> 粉絲專頁</span></div> 
+				<a href="https://www.facebook.com/sf.muffin/"><img src=" media/00logo.png" style="height:100px"> </a>
+			</div>
+		</div>
+    </div>
+</div>
+<br />
+<footer class="container-fluid"
+	style="color: #6A3906; background-color: #F5CBA5; font-size: 12pt;
+	padding-top: 10px; margin-bottom: 0px;">
+	<address class="container text-center">| 版權所屬 微笑的魚 所有 © 2018 |</address>
+</footer>
+</html>
